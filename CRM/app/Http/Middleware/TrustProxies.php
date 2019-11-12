@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace PromoWeb1s\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Fideloper\Proxy\TrustProxies as Middleware;
