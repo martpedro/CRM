@@ -4422,6 +4422,13 @@ li.home:before {
     background: -o-linear-gradient(45deg, #8e24aa, #ff6e40) !important;
     background: linear-gradient(45deg, #8e24aa, #ff6e40) !important;
 }
+.gradient-45deg-purple-deep-blue {
+    background: #8e24aa;
+    background: -webkit-linear-gradient(45deg, #452ec5, #1d8ce5) !important;
+    background: -moz- oldlinear-gradient(45deg, #452ec5, #1d8ce5) !important;
+    background: -o-linear-gradient(45deg, #452ec5, #1d8ce5) !important;
+    background: linear-gradient(45deg, #452ec5, #1d8ce5) !important;
+}
 .gradient-45deg-purple-deep-orange.gradient-shadow {
     -webkit-box-shadow: 0 6px 20px 0 rgba(255, 110, 64, .5) !important;
     box-shadow: 0 6px 20px 0 rgba(255, 110, 64, .5) !important;
@@ -7169,4 +7176,47 @@ tr.group:hover {
     position: fixed;
     top: 40%;
     right: -2px;
+}
+
+/*/////////////////añadido por pedro/////////////////////*/
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #e3342f
+}
+.custom-select.is-invalid~.invalid-feedback,
+.custom-select.is-invalid~.invalid-tooltip,
+.form-control-file.is-invalid~.invalid-feedback,
+.form-control-file.is-invalid~.invalid-tooltip,
+.form-control.is-invalid~.invalid-feedback,
+.form-control.is-invalid~.invalid-tooltip,
+.was-validated .custom-select:invalid~.invalid-feedback,
+.was-validated .custom-select:invalid~.invalid-tooltip,
+.was-validated .form-control-file:invalid~.invalid-feedback,
+.was-validated .form-control-file:invalid~.invalid-tooltip,
+.was-validated .form-control:invalid~.invalid-feedback,
+.was-validated .form-control:invalid~.invalid-tooltip {
+    display: block
+}
+.form-check-input.is-invalid~.invalid-feedback,
+.form-check-input.is-invalid~.invalid-tooltip,
+.was-validated .form-check-input:invalid~.invalid-feedback,
+.was-validated .form-check-input:invalid~.invalid-tooltip {
+    display: block
+}
+
+.custom-control-input.is-invalid~.invalid-feedback,
+.custom-control-input.is-invalid~.invalid-tooltip,
+.was-validated .custom-control-input:invalid~.invalid-feedback,
+.was-validated .custom-control-input:invalid~.invalid-tooltip {
+    display: block
+}
+
+.custom-file-input.is-invalid~.invalid-feedback,
+.custom-file-input.is-invalid~.invalid-tooltip,
+.was-validated .custom-file-input:invalid~.invalid-feedback,
+.was-validated .custom-file-input:invalid~.invalid-tooltip {
+    display: block
 }
