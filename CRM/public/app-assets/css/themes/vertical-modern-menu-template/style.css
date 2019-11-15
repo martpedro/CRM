@@ -4511,11 +4511,20 @@ li.home:before {
     box-shadow: 0 6px 20px 0 rgba(255, 160, 0, .5) !important;
 }
 .gradient-45deg-indigo-purple {
-    background: #303f9f;
-    background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
-    background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2) !important;
-    background: -o-linear-gradient(45deg, #303f9f, #7b1fa2) !important;
-    background: linear-gradient(45deg, #303f9f, #7b1fa2) !important;
+    /*background: #303f9f;*/
+    /*background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    /*background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    /*background: -o-linear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    /*background: linear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    background-image: url('/app-assets/images/header/CRM-02.png') !important;
+}
+.gradient-45deg-indigo-purple2 {
+    /*background: #303f9f;*/
+    /*background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    /*background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    /*background: -o-linear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    /*background: linear-gradient(45deg, #303f9f, #7b1fa2) !important;*/
+    background-image: url('/app-assets/images/header/CRM-03.png') !important;
 }
 .gradient-45deg-indigo-purple.gradient-shadow {
     -webkit-box-shadow: 0 6px 20px 0 rgba(123, 31, 162, .5) !important;

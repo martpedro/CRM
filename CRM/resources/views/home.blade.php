@@ -24,7 +24,7 @@
  --}}
 
  @extends('layouts.theme1')
- @section('title','Home')
+ @section('title','Home ')
  @section('content')
     <!-- BEGIN: Header-->
     @include('header.header')
@@ -35,7 +35,7 @@
     <!-- BEGIN: Page Main-->
     <div id="main">
       <div class="row">
-        <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+        <div class="content-wrapper-before gradient-45deg-indigo-purple2"></div>
         <div class="col s12">
           <div class="container">
             <!-- Current balance & total transactions cards-->
