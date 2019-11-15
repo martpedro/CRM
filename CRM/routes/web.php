@@ -15,15 +15,11 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/inicio/{name?}',function ($name=null)
-{
-	return "Hola Mundo ".$name;
-});
-
-
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
 
 
