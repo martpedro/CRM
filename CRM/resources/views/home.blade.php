@@ -25,6 +25,23 @@
 
  @extends('layouts.theme1')
  @section('title','Home ')
+ @section('css')
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/animate-css/animate.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/style.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-modern.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/intro.css">
+    <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/custom/custom.css">
+    <!-- END: Custom CSS-->
+ @endsection
  @section('content')
     <!-- BEGIN: Header-->
     @include('header.header')
@@ -820,6 +837,10 @@
     @include('footer.footer')
     <!-- END: Footer-->
     
+ @endsection
+
+ @section('js')
+   
     <!-- BEGIN VENDOR JS-->
     <script src="app-assets/js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
