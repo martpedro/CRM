@@ -5295,12 +5295,13 @@ nav.display-none.search-sm .nav-wrapper form .input-field input.search-box-sm:no
 }
 .sidenav li a.active {
     color: #fff;
-    background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2);
+    /*background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2);
     background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2);
     background: -o-linear-gradient(45deg, #303f9f, #7b1fa2);
     background: linear-gradient(45deg, #303f9f, #7b1fa2);
     -webkit-box-shadow: 3px 3px 20px 0 rgba(123, 31, 162, .5);
-    box-shadow: 3px 3px 20px 0 rgba(123, 31, 162, .5);
+    box-shadow: 3px 3px 20px 0 rgba(123, 31, 162, .5);*/
+    background: #590DBE;
 }
 .sidenav li a.active i {
     color: #fff;
