@@ -2,6 +2,7 @@
 
 namespace PromoWeb1s\Http\Controllers;
 
+use PromoWeb1s\Mark;
 use Illuminate\Http\Request;
 
 class MarkController extends Controller
@@ -23,7 +24,7 @@ class MarkController extends Controller
      */
     public function create()
     {
-        //
+        return view('views.mark');
     }
 
     /**
@@ -32,9 +33,22 @@ class MarkController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(Request $request) {
+        if ($request->hasFile('logo')) {
+            $file=$request->file('logo');
+            $imgname=time().$file->getClientOriginalName();
+            $file->move(public_path().'/images', $imgname);
+        }
+
+        $mark=new mark();
+        $mark->nombre=$request->input('marca');  
+        $mark->pagina=$request->input('url');
+        $mark->direccion=$request->input('direccion');    
+        $mark->telefono=$request->input('telefono'); 
+        $mark->logo=$imgname;  
+        $mark->save();
+        return 'Guardado';
+
     }
 
     /**

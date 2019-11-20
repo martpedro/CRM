@@ -11,73 +11,67 @@
 	<div id="main">
 		<div class="row">
 			<div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
-			<div class="breadcrumbs-dark pb-0 pt-4" id="breadcrumbs-wrapper">
-                <!-- Search for small screen-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 m6 l6">
-                            
-                            <ol class="breadcrumbs mb-0">
-                                <li class="breadcrumb-item"><a href="index-2.html">Home</a>
-                                </li>
-                                <li class="breadcrumb-item"><a href="#">Form</a>
-                                </li>
-                                <li class="breadcrumb-item active">Form Layouts
-                                </li>
-                            </ol>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
             <div class="col s12">
             	<div class="container">
             		<div class="seaction">
-            			<div class="card">
+            			<div style="margin-top: 80px" class="card" >
                             <div class="card-content">
-                                <p class="caption mb-0">Includes predefined classes for easy form layout options.</p>
+                                <h1 class="card-title">Registra tu Marca</h1>
                             </div>
                         </div>
                         <div class="row">
                             <!-- Form with icon prefixes -->
                             <div class="col s12 m6 l6">
                                 <div id="prefixes" class="card card card-default scrollspy">
-                                    <div class="card-content">
-                                        <h4 class="card-title">Form with icon prefixes</h4>
-                                        <form class="col s12">
+                                    <div style="" class="card-content">
+                                        <!-- <h4 class="card-title">Form with icon prefixes</h4> -->
+                                        <form class="col s12" enctype="multipart/form-data" method="post" action="/mark">
+                                            @csrf
                                             <div class="row">
                                                 <div class="input-field col s12">
-                                                    <i class="material-icons prefix">account_circle</i>
-                                                    <input id="name3" type="text">
-                                                    <label for="name3">Name</label>
+                                                    <i class="material-icons prefix">business</i>
+                                                    <input id="marca" name="marca" type="text">
+                                                    <label for="marca">Marca</label>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="input-field col s12">
-                                                    <i class="material-icons prefix">email</i>
-                                                    <input id="email3" type="email">
-                                                    <label for="email3">Email</label>
+                                                    <i class="material-icons prefix">web</i>
+                                                    <input id="url" name="url" type="text">
+                                                    <label for="url">Sitio Web</label>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="input-field col s12">
-                                                    <i class="material-icons prefix">lock_outline</i>
-                                                    <input id="password3" type="password">
-                                                    <label for="password3">Password</label>
+                                                    <i class="material-icons prefix">location_on</i>
+                                                    <input id="direccion" name="direccion" type="text">
+                                                    <label for="direccion">Dirección</label>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="input-field col s12">
-                                                    <i class="material-icons prefix">question_answer</i>
-                                                    <textarea id="message3" class="materialize-textarea"></textarea>
-                                                    <label for="message3">Message</label>
+                                                    <i class="material-icons prefix">phone</i>
+                                                    <input id="telefono" name="telefono" type="tel">
+                                                    <label for="telefono">Teléfono</label>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
-                                                            <i class="material-icons right">send</i>
-                                                        </button>
+                                            </div>
+                                            <div class="row">
+                                                <div id="file-upload" class="section">
+                                                    <div class="row section">
+                                                        <div class="col s12 m4 l3">
+                                                            <p>Imagen</p>
+                                                        </div>
+                                                        <div class="col s12 m8 l9">
+                                                            <input type="file" id="input-file-now" name="logo" class="dropify" data-default-file="" />
+                                                        </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <button class="btn cyan waves-effect waves-light right" type="submit">Submit
+                                                        <i class="material-icons right">send</i>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </form>
@@ -90,58 +84,6 @@
             </div>
 		</div>
 	</div>
-	<!-- <div id="main">
-		
-		<div class="row">
-			<div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
-			<div class="col s12 m6 l6">
-				<div id="prefixes" class="card card card-default scrollspy">
-					<div class="card-content">
-						<h4 class="card-title">Form with icon prefixes</h4>
-						<form class="col s12">
-			            <div class="row">
-			              <div class="input-field col s12">
-			                <i class="material-icons prefix">account_circle</i>
-			                <input id="name3" type="text">
-			                <label for="name3">Name</label>
-			              </div>
-			            </div>
-			            <div class="row">
-			              <div class="input-field col s12">
-			                <i class="material-icons prefix">email</i>
-			                <input id="email3" type="email">
-			                <label for="email3">Email</label>
-			              </div>
-			            </div>
-			            <div class="row">
-			              <div class="input-field col s12">
-			                <i class="material-icons prefix">lock_outline</i>
-			                <input id="password3" type="password">
-			                <label for="password3">Password</label>
-			              </div>
-			            </div>
-			            <div class="row">
-			              <div class="input-field col s12">
-			                <i class="material-icons prefix">question_answer</i>
-			                <textarea id="message3" class="materialize-textarea"></textarea>
-			                <label for="message3">Message</label>
-			              </div>
-			              <div class="row">
-			                <div class="input-field col s12">
-			                  <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
-			                    <i class="material-icons right">send</i>
-			                  </button>
-			                </div>
-			              </div>
-			            </div>
-			          </form>
-					</div>
-						
-				</div>
-			</div>
-		</div>
-		
-	</div> -->
 
  	@include('footer.footer')
 
@@ -162,5 +104,11 @@
     <!-- BEGIN PAGE LEVEL JS-->
     <script src="app-assets/js/scripts/dashboard-modern.js" type="text/javascript"></script>
     <script src="app-assets/js/scripts/intro.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL JS-->
+
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="app-assets/vendors/dropify/js/dropify.min.js"></script>
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="app-assets/js/scripts/form-file-uploads.js"></script>
     <!-- END PAGE LEVEL JS-->
 @endsection

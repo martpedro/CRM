@@ -20,6 +20,8 @@
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/animate-css/animate.css">
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist.min.css">
         <link rel="stylesheet" type="text/css" href="app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/flag-icon/css/flag-icon.min.css">
+        <link rel="stylesheet" type="text/css" href="app-assets/vendors/dropify/css/dropify.min.css">
         <!-- END: VENDOR CSS-->
         <!-- BEGIN: Page Level CSS-->
         <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
@@ -36,3 +38,4 @@
         
     </body>
 </html>
+
