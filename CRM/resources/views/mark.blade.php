@@ -2,6 +2,21 @@
 
 @section('title','Marks ')
 
+@section('css')
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/flag-icon/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/dropify/css/dropify.min.css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/materialize.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-modern-menu-template/style.css">
+    <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/css/custom/custom.css">
+    <!-- END: Custom CSS-->
+@endsection
+
 @section('content')
 	
 	@include('header.header')
@@ -87,14 +102,14 @@
 
  	@include('footer.footer')
 
-	<!-- BEGIN VENDOR JS-->
+@endsection
+    
+@section('js')
+    <!-- BEGIN VENDOR JS-->
     <script src="app-assets/js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/chartjs/chart.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/chartist-js/chartist.min.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/chartist-js/chartist-plugin-tooltip.js" type="text/javascript"></script>
-    <script src="app-assets/vendors/chartist-js/chartist-plugin-fill-donut.min.js" type="text/javascript"></script>
+    <script src="app-assets/vendors/dropify/js/dropify.min.js"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="app-assets/js/plugins.js" type="text/javascript"></script>
@@ -102,13 +117,9 @@
     <script src="app-assets/js/scripts/customizer.js" type="text/javascript"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/dashboard-modern.js" type="text/javascript"></script>
-    <script src="app-assets/js/scripts/intro.js" type="text/javascript"></script>
+    <script src="app-assets/js/scripts/form-layouts.js" type="text/javascript"></script>
+     <script src="app-assets/js/scripts/form-file-uploads.js"></script>
     <!-- END PAGE LEVEL JS-->
+ @endsection
 
-    <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/dropify/js/dropify.min.js"></script>
-    <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/form-file-uploads.js"></script>
-    <!-- END PAGE LEVEL JS-->
-@endsection
+
