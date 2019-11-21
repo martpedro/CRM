@@ -19,7 +19,12 @@ try {
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
+window.chartist = require('chartist');
 window.axios = require('axios');
+window.Datatable = require('datatables.net');
+window.materialize_js = require('materialize-js');
+window.materialize_css = require('materialize-css');
+window.vue2_perfect_scrollbar = require('vue2-perfect-scrollbar');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

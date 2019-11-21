@@ -15,10 +15,12 @@
         <link rel="apple-touch-icon" href="app-assets/images/favicon/apple-touch-icon-152x152.png">
         <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/favicon/favicon-32x32.png">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+
         @yield('css')
         
     </head>
-    <body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu 2-columns  " data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
+    <body  class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu 2-columns  " data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
         @yield('content')
         @yield('js')
     </body>
