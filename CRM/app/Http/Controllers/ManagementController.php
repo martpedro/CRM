@@ -1,7 +1,7 @@
 <?php
 
 namespace PromoWeb1s\Http\Controllers;
-
+use PromoWeb1s\Perfil;
 use Illuminate\Http\Request;
 
 class ManagementController extends Controller
@@ -21,8 +21,13 @@ class ManagementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        if ($request->ajax()) {
+            $perfiles = Perfil::all(['id','name','marca_id','perfil_parent']);
+            return response()->json($perfiles,200);
+            
+        }
         return view('management.management');
     }
 
@@ -44,7 +49,14 @@ class ManagementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->ajax()) {
+            $perfil                = new Perfil();
+            $perfil->name          = $request->input('name');
+            $perfil->marca_id      = $request->input('marca_id');
+            $perfil->perfil_parent = $request->input('perfil_parent');
+            $perfil->save();
+            return response()->json(["Perfil Agregado Correctamente"],200);
+        }
     }
 
     /**

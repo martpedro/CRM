@@ -3,37 +3,37 @@ $(document).ready(function() {
    /*
     * DataTables - Tables
     */
-   var calcDataTableHeight = function() {
-      return $(window).height() - 425 + "px";
-   };
+   // var calcDataTableHeight = function() {
+   //    return $(window).height() - 425 + "px";
+   // };
 
-   var table = $("#data-table-contact").DataTable({
-      sScrollY: calcDataTableHeight(),
-      scrollCollapse: true,
-      paging: true,
-      responsive: true,
-      lengthMenu: [15],
-      aoColumns: [
-         {
-            bSortable: false
-         },
-         {
-            bSortable: false
-         },
-         null,
-         null,
-         null,
-         {
-            bSortable: false
-         },
-         {
-            bSortable: false
-         }
-      ]
-   });
+   // var table = $("#data-table-contact").DataTable({
+   //    sScrollY: calcDataTableHeight(),
+   //    scrollCollapse: true,
+   //    paging: true,
+   //    responsive: true,
+   //    lengthMenu: [15],
+   //    aoColumns: [
+   //       {
+   //          bSortable: false
+   //       },
+   //       {
+   //          bSortable: false
+   //       },
+   //       null,
+   //       null,
+   //       null,
+   //       {
+   //          bSortable: false
+   //       },
+   //       {
+   //          bSortable: false
+   //       }
+   //    ]
+   // });
 
    // Custom search
-   function filterGlobal() {
+/*   function filterGlobal() {
       table.search($("#global_filter").val(), $("#global_regex").prop("checked"), $("#global_smart").prop("checked")).draw();
    }
 
@@ -59,7 +59,7 @@ $(document).ready(function() {
             .attr("data-column")
       );
    });
-
+*/
    //  Notifications & messages scrollable
    if ($("#sidebar-list").length > 0) {
       var ps_sidebar_list = new PerfectScrollbar("#sidebar-list", {
