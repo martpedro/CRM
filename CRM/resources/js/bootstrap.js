@@ -22,6 +22,7 @@ try {
 window.chartist = require('chartist');
 window.axios = require('axios');
 window.Datatable = require('datatables.net');
+window.dropify = require('dropify');
 window.materialize_js = require('materialize-js');
 window.materialize_css = require('materialize-css');
 window.vue2_perfect_scrollbar = require('vue2-perfect-scrollbar');

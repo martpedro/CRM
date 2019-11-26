@@ -4,13 +4,13 @@
      		<div class="content-wrapper-before gradient-45deg-indigo-purple2" style="margin: 0 0 0 1rem;"></div>
       		<div class="col s12">
         		<div class="container">
+
           		<!-- Add new contact popup -->
-          		<bnt-add-management></bnt-add-management>
-          
+          		<btn-newmark-component></btn-newmark-component>
           		<!-- Add new contact popup Ends-->
 
           		<!-- Modal Structure -->
-          		<modaladd-management></modaladd-management>
+          		<newmark-component></newmark-component>
           		<!-- Modal Structure Ends -->
 
           		<!-- Sidebar Area Starts -->
@@ -59,11 +59,11 @@
             <div class="app-wrapper">
               <div class="datatable-search">
                 <i class="material-icons mr-2 search-icon">search</i>
-                <input type="text" placeholder="Search Contact" class="app-filter" id="global_filter">
+                <input type="text" placeholder="Search Mark" class="app-filter" id="global_filter">
               </div>
               <div id="button-trigger" class="card card card-default scrollspy border-radius-6 fixed-width">
                 <div class="card-content p-0">
-                  <table id="data-table-contact" class="display" style="width:100%">
+                  <table id="data-table-mark" class="display" style="width:100%">
                     <thead>
                       <tr class="center-align">
                         <th class="background-image-none center-align">
@@ -605,29 +605,40 @@
 </template>
 
 <script>
+
+  import datables from 'datatables'
+
 	export default {
+
+    mounted(){
+      this.getMarks()
+    },
+
     data(){
       return{
         marks: []
       }
     },
 
-    mounted() {
-      const axios = require('axios');
-      axios.get('http://127.0.0.1:8000/marks').then(response=>{this.marks=response.data;
-        this.mytable()
-      });
-    },
-
     methods:{
-      mytable(){
+      marktable(){
         $(function(){
-          $('#data-table-contact').DataTable();
+          var table=$('#data-table-mark').DataTable();
+
+          $('#global_filter').on( 'keyup', function () {
+            table.search( this.value ).draw();
+          });
         });
-      }
+      },
+
+      getMarks(){
+        var urlMarks="http://127.0.0.1:8000/marks";
+        axios.get(urlMarks).then(response=>{
+          this.marks=response.data;
+          this.marktable()
+        });
+      },
     }
-
-
   }
   
 </script>

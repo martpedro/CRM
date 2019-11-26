@@ -19,8 +19,6 @@ class MarkController extends Controller
             return response()->json($marks,200);
         }
         return view('marks/listmark');
-        /*$marks=Mark::all();
-        return $marks;*/
     }
 
     /**
