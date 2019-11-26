@@ -25,6 +25,10 @@ window.Datatable = require('datatables.net');
 // window.materialize_js = require('materialize-js');
 // window.materialize_css = require('materialize-css');
 // window.vue2_perfect_scrollbar = require('vue2-perfect-scrollbar');
+window.dropify = require('dropify');
+window.materialize_js = require('materialize-js');
+window.materialize_css = require('materialize-css');
+window.vue2_perfect_scrollbar = require('vue2-perfect-scrollbar');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

@@ -26,6 +26,10 @@ Vue.component('list-management', require('./components/management/list.vue').def
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
     
 
+Vue.component('list-marks-component', require('./components/marks/listmarks.vue').default);
+Vue.component('btn-newmark-component', require('./components/marks/btn-newmark.vue').default);
+Vue.component('newmark-component', require('./components/marks/newmark.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

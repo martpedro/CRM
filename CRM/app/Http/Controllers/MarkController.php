@@ -12,9 +12,13 @@ class MarkController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('mark');
+        if($request->ajax()){
+            $marks=Mark::all();
+            return response()->json($marks,200);
+        }
+        return view('marks/listmark');
     }
 
     /**
@@ -24,7 +28,7 @@ class MarkController extends Controller
      */
     public function create()
     {
-        return view('views.mark');
+        /*return view('views.listmark');*/
     }
 
     /**

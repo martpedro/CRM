@@ -23,7 +23,7 @@ Route::resource('management','ManagementController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('/mark', 'MarkController');
+Route::resource('marks', 'MarkController');
 
 
 
