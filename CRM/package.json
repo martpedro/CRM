@@ -29,7 +29,7 @@
         "chart.js": "^2.9.3",
         "chartist": "^0.11.4",
         "datatables": "^1.10.18",
-        "datatables.net": "^1.10.20",
+        "datatables.net": "^1.11.3",
         "datatables.net-dt": "^1.10.20",
         "dropify": "^0.2.2",
         "fr-dialogmodal": "^1.0.4",
